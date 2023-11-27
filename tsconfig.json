@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2017", // Spécifie la version cible de ECMAScript pour le code compilé.
+        "module": "commonjs", // Utilisez le système de modules CommonJS pour Node.js.
+        "esModuleInterop": true, // Permet les importations par défaut des modules avec export =.
+        "forceConsistentCasingInFileNames": true, // Assurez la cohérence de la casse dans les noms de fichiers.
+        "strict": true, // Active une série d'options strictes pour maximiser la vérification de type.
+        "outDir": "./dist", // Répertoire de sortie pour les fichiers compilés.
+        "rootDir": "./src", // Répertoire racine contenant les fichiers TypeScript source.
+        "resolveJsonModule": true, // Permet l'importation de modules JSON.
+        "lib": [
+            "esnext"
+        ], // Spécifiez une liste de bibliothèques de fichiers de déclaration à inclure dans la compilation.
+        "types": [
+            "node"
+        ], // Inclut les types Node.js pour la compilation.
+        "skipLibCheck": true // Ignore les vérifications de type pour les fichiers de déclaration de bibliothèque.
+    },
+    "include": [
+        "src/**/*"
+    ], // Inclut tous les fichiers TypeScript dans le répertoire src et ses sous-répertoires.
+    "exclude": [
+        "node_modules"
+    ] // Exclut le répertoire node_modules de la compilation.
+}

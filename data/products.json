@@ -1,0 +1,28 @@
+[
+    {
+        "id": "o5001",
+        "clientId": "c1001",
+        "items": [
+            {
+                "productId": "p1001",
+                "quantity": 2
+            },
+            {
+                "productId": "p1002",
+                "quantity": 1
+            }
+        ],
+        "status": "Nouvelle"
+    },
+    {
+        "id": "o5002",
+        "clientId": "c1002",
+        "items": [
+            {
+                "productId": "p1001",
+                "quantity": 1
+            }
+        ],
+        "status": "Expédiée"
+    }
+]

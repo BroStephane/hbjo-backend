@@ -1,0 +1,14 @@
+[
+    {
+        "id": "s3001",
+        "name": "Fournisseur de Diamants",
+        "description": "Fournisseur spécialisé dans les diamants de haute qualité.",
+        "contact": "contact@diamantsupplier.com"
+    },
+    {
+        "id": "s3002",
+        "name": "Horlogerie Précise",
+        "description": "Fournisseur et fabricant de pièces d'horlogerie de précision.",
+        "contact": "info@horlogerie.com"
+    }
+]

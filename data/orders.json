@@ -1,0 +1,16 @@
+[
+    {
+        "id": "p1001",
+        "name": "Collier en diamant",
+        "type": "Bijou",
+        "price": 5000,
+        "quantity": 10
+    },
+    {
+        "id": "p1002",
+        "name": "Montre de luxe",
+        "type": "Montre",
+        "price": 8000,
+        "quantity": 5
+    }
+]
