@@ -12,6 +12,7 @@
             "esnext"
         ], // Spécifiez une liste de bibliothèques de fichiers de déclaration à inclure dans la compilation.
         "types": [
+            "jest",
             "node"
         ], // Inclut les types Node.js pour la compilation.
         "skipLibCheck": true // Ignore les vérifications de type pour les fichiers de déclaration de bibliothèque.

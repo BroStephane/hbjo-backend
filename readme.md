@@ -77,3 +77,55 @@ ___
 - **tsconfig.json** : Configuration pour le compilateur TypeScript.
 ___
 
+Pour lancer les tests et l'application dans un projet Node.js avec TypeScript, vous devez configurer des scripts dans votre fichier `package.json`. Ces scripts définiront les commandes pour démarrer l'application et exécuter les tests.
+
+### Configuration des Scripts dans package.json
+
+Ouvrez votre fichier `package.json` et ajoutez des scripts dans la section `scripts`. Voici un exemple de ce à quoi cela pourrait ressembler :
+
+```json
+{
+  "name": "votre-projet",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  // ... autres configurations
+}
+```
+
+### Explication des Scripts
+
+- **start** : Lance l'application en utilisant `ts-node` qui permet d'exécuter directement TypeScript sans avoir besoin de le compiler au préalable. `src/app.ts` est le point d'entrée de votre application.
+- **dev** : Utilise `nodemon` pour redémarrer automatiquement votre serveur à chaque fois qu'un fichier est modifié. C'est utile en développement.
+- **build** : Compile le code TypeScript en JavaScript en utilisant le compilateur TypeScript (`tsc`). Le code compilé est généralement placé dans le répertoire `dist`.
+- **test** : Exécute les tests à l'aide de Jest.
+
+### Lancement de l'Application
+
+Pour lancer l'application, ouvrez votre terminal et exécutez :
+
+```bash
+npm start
+```
+
+Si vous êtes en mode de développement et que vous souhaitez que l'application redémarre automatiquement à chaque modification, utilisez :
+
+```bash
+npm run dev
+```
+
+### Exécution des Tests
+
+Pour exécuter les tests, utilisez la commande suivante dans votre terminal :
+
+```bash
+npm test
+```
+
+### Avant de Lancer
+
+Assurez-vous que toutes les dépendances nécessaires sont installées en exécutant `npm install` dans votre projet. Vérifiez également que votre `tsconfig.json` et éventuellement `jest.config.js` sont correctement configurés. Pour les tests, assurez-vous que Jest est configuré pour fonctionner avec TypeScript (si vous utilisez `ts-jest`, cette configuration est généralement automatique).

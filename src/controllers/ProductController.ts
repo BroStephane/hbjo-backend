@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import ProductService from '../services/ProductService';
 
+
 class ProductController {
     static async createProduct(req: Request, res: Response) {
         try {
